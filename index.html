@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Moja biblioteka</h1>
+    <div class="btn-container">
+      <button class="add-book">Dodaj knjigu</button>
+    </div>
+
+    <div class="library"></div>
+    <dialog>
+      <button class="close-btn">X</button>
+      <form action="">
+        <div class="form-slot">
+          <label for="book-name">Knjiga </label>
+          <input type="text" name="book-name" id="book-name" />
+        </div>
+        <div class="form-slot">
+          <label for="book-author">Autor </label>
+          <input type="text" name="book-author" id="book-author" />
+        </div>
+        <div class="form-slot">
+          <label for="book-release">Godina </label>
+          <input type="number" name="book-release" id="book-release" />
+        </div>
+
+        <button class="add-new-book">Dodaj</button>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
