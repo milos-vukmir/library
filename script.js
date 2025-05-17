@@ -5,16 +5,16 @@ const add_book = document.querySelector(".add-book");
 const close_btn = document.querySelector(".close-btn");
 const add_new_book = document.querySelector(".add-new-book");
 
-//Konstruktor za knjigu
-function Book(name, author, year, id, readStatus) {
-  this.name = name;
-  this.author = author;
-  this.year = year;
-  this.id = id;
-  this.readStatus = readStatus;
+class Book {
+  constructor(name, author, year, id, readStatus) {
+    this.name = name;
+    this.author = author;
+    this.year = year;
+    this.id = id;
+    this.readStatus = readStatus;
+  }
 }
 
-//Funkcija koja provjerava da li je knjiga procitana ili ne
 Book.prototype.read = function () {
   if (this.readStatus === false) {
     this.readStatus = true;
